@@ -15,8 +15,8 @@ def dynamodb() -> UsageRecord:
         total_bytes += desc["Table"].get("TableSizeBytes", 0)
     return UsageRecord("aws", "dynamodb", total_bytes / (1024 * 1024))
 
-def documentdb() -> UsageRecord:
-    # client = boto3.client("docdb")
-    # API does not expose size directly, this is a placeholder
-    # cluster_count = len(client.describe_db_clusters()["DBClusters"])
-    return UsageRecord("aws", "documentdb", 0)
+# def documentdb() -> UsageRecord:
+#     # client = boto3.client("docdb")
+#     # API does not expose size directly, this is a placeholder
+#     # cluster_count = len(client.describe_db_clusters()["DBClusters"])
+#     return UsageRecord("aws", "documentdb", 0)

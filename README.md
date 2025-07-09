@@ -19,6 +19,28 @@ Whether you're optimizing storage costs, performing cloud audits, or building in
 ```bash
 uv pip install --requirements pyproject.toml
 ```
+---
+
+## Run the CLI
+
+Assuming that you have configured the AWS CLI  with the right credentials and have at least `ReadOnly` access
+to AWS resources, run the below command:
+
+```bash
+uv run cli.py
+```
+
+Output:
+```
+RDS                 0.00 GB
+DYNAMODB            0.00 GB
+EBS                 0.00 GB
+EFS                 0.00 GB
+S3                  0.00 GB
+--------------------------
+TOTAL               0.00 GB
+```
+
 
 ---
 
