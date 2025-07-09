@@ -23,7 +23,7 @@ uv pip install --requirements pyproject.toml
 
 ## Run the CLI
 
-Assuming that you have configured the AWS CLI  with the right credentials and have at least `ReadOnly` access
+Assuming that you have configured the AWS CLI with the region and right credentials and have at least `ReadOnly` access
 to AWS resources, run the below command:
 
 ```bash
