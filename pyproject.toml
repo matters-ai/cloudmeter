@@ -1,0 +1,15 @@
+[project]
+name = "cloudmeter"
+version = "0.1.0"
+description = "cloudmeter is a CLI tool to measure the total data volume used across cloud data stores — both managed and unmanaged"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.39.3",
+    "typer>=0.16.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.2",
+]
