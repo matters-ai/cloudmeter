@@ -17,9 +17,7 @@ Whether you're optimizing storage costs, performing cloud audits, or building in
 ## 🛠️ Installation
 
 ```bash
-pip install cloudmeter
-# or
-uv pip install cloudmeter
+uv pip install --requirements pyproject.toml
 ```
 
 ---
