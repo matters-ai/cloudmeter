@@ -5,6 +5,7 @@ from cloudmeter.core import mb_to_gb
 
 app = typer.Typer()
 
+
 @app.command()
 def aws_summary():
     """Summarize AWS data store usage"""
@@ -15,6 +16,7 @@ def aws_summary():
         total_mb += usage.size_mb
     print("-" * 26)
     print(f"{'TOTAL':<12}  {mb_to_gb(total_mb):>10.2f} GB")
+
 
 if __name__ == "__main__":
     app()
